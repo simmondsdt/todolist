@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ToDoList</title>
+    <title>To Do List</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <h1 class='textcenter'>Your To Do Lists!</h1>
   </head>
-
+  <hr />
   <body>
-    <%= yield %>
+  <%= yield %>
+    <div class='navbar2'>
+      <nav>
+        <%= link_to 'New List', new_list_path %>
+        <%= link_to 'New Item', new_item_path %>
+      </nav>
+    </div>
   </body>
+  <hr />
+  <footer class='textcenter'>
+    <br />
+    <a href='/'>Home</a>
+    <br />
+    Built By: Daniel Simmonds
+    <br />
+    <%= link_to 'https://github.com/simmondsdt', :target => 'blank' %>
+  </footer>
 </html>

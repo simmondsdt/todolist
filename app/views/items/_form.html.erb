@@ -1,12 +1,22 @@
+<div class='form'>
 <%= form_for @item do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <div class='field'>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
     <br />
+  <div class='area'>
   <%= f.label :description %>
   <%= f.text_area :description %>
+  </div>
     <br />
-  <%= f.label :completed %>
-  <%= f.check_box :completed %>
+  <div class='check'>
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+  </div>
     <br />
-  <%= f.submit %>
+  <div class='submit'>
+    <%= f.submit %>
+  </div>
 <% end %>
+</div>

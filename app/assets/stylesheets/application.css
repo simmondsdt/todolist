@@ -1,15 +1,96 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  font-size: medium;
+  margin: 50px 50px 50px 50px;
+  background-color: #ececec;
+  color: darkblue;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.field {
+  font-size: large;
+  text-align: center;
+  padding: 12px; 20px;
+  margin-top: 10px;
+  box-sizing: content-box;
+}
+
+.area {
+  text-align: center;
+  padding: 12px; 20px;
+  margin-top: 10px;
+  box-sizing: content-box;
+}
+
+.check {
+  text-align: center;
+}
+
+.submit {
+  text-align: center;
+}
+
+.lists {
+  margin-left: 100px;
+  margin-top: 20px;
+  z-index: -1;
+}
+
+.navbar {
+  margin-top: -75px;
+  margin-bottom: auto;;
+  margin-left: auto;
+  margin-right: 100px;
+  list-style-type: none;
+  width: 80px;
+  background-color: #ececec;
+  z-index: -2;
+}
+
+.navbar a {
+  position: relative;
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar a:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+.navbar2 {
+  margin-left: -50px;
+  width: 80px;
+  background-color: #ececec;
+  z-index: -3;
+}
+
+.navbar2 a {
+  position: relative;
+  margin-top: 10px;
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+}
+
+.navbar2 a:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+h5 {
+  text-indent: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: darkblue;
+}
